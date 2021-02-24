@@ -127,6 +127,12 @@ article h4 {
     border-top: 1px solid lightgray;
 }
 
+a {color:black!important; text-decoration-line: none;}
+
+.button:hover {
+	border:1px solid #00cc34;
+}
+
 .button {
     display: flex;
     width: 120px;
@@ -138,6 +144,7 @@ article h4 {
     justify-content: center;
     gap: 5px;
     font-weight: 600;
+    box-sizing: border-box;
 }
 
 article {
