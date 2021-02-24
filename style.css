@@ -1,0 +1,201 @@
+body {
+    background-image: url("bg.png");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+
+
+
+.topbar p,
+h1,
+.button,
+.greentopr {
+    font-weight: 600;
+}
+
+.topbar p {
+    font-size: 25px;
+}
+
+.hero h2,
+article h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 0.2em;
+}
+
+.hero h2 {
+    font-size: 17px;
+    letter-spacing: 4px
+}
+
+.button,
+.offer-tnc h4 {
+    font-size: 14px;
+    border-bottom: 0;
+}
+
+.offer-tnc p {
+    font-size: 8px;
+    flex: 1 1 auto;
+
+}
+
+.divider {
+    border-bottom: 1px solid white;
+}
+
+
+
+.container {
+    background-color: white;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: start;
+    margin-left: 128px;
+}
+
+.hero {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),url("hero-bg.png");
+    background-size: cover;
+    height: 390px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+    margin-left: 480px;
+}
+
+.oddsbox {
+    width: 696px;
+    max-width: 95vw;
+    margin-top: -60px;
+    background-color: white;
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.greentop {
+    background-color: #47D16A;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.providers {
+    width: 100%;
+}
+
+.provider-row {
+    display: flex;
+    gap: 30px;
+    padding: 15px 0;
+    margin: 0 30px;
+}
+
+.provider-row h4 {
+    margin-top: 0;
+}
+
+.provider-row:nth-child(3) {
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+.button {
+    display: flex;
+    width: 120px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    width: 120px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+article {
+    margin: 10px 60px 60px;
+}
+
+footer {
+    background-color: #F5F2F2;
+    min-height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+
+	.topbar {
+
+	}
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .text {
+        margin: unset;
+        max-width: 95%;
+    }
+
+    .oddsbox {
+        max-width: 100%;
+    }
+
+    .offer-tnc {
+        flex: 1 0 100%;
+    }
+
+    .button {
+        order: -1;
+        flex: 1 0 40%;
+        max-width: 120px;
+    }
+
+    .logo {
+        order: -2;
+    }
+
+    .provider-row {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: unset;
+    }
+}
