@@ -151,6 +151,10 @@ article {
     margin: 10px 60px 60px;
 }
 
+article>p {
+    text-indent: 2em;
+}
+
 footer {
     background-color: #F5F2F2;
     min-height: 40px;
