@@ -75,8 +75,9 @@ article h4 {
 
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.45),
-        rgba(0, 0, 0, 0.45)), url("hero-bg.png");
+        rgba(0, 0, 0, 0.45)), url("hero-bg.jpg");
     background-size: cover;
+    background-position-y: center; 
     height: 390px;
     color: white;
     display: flex;
@@ -87,7 +88,6 @@ article h4 {
 
 .text {
     text-align: center;
-    margin-left: 480px;
 }
 
 .oddsbox {
