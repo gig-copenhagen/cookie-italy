@@ -74,10 +74,8 @@ article h4 {
 }
 
 .hero {
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ),url("hero-bg.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)), url("hero-bg.png");
     background-size: cover;
     height: 390px;
     color: white;
@@ -127,10 +125,13 @@ article h4 {
     border-top: 1px solid lightgray;
 }
 
-a {color:black!important; text-decoration-line: none;}
+a {
+    color: black !important;
+    text-decoration-line: none;
+}
 
 .button:hover {
-	border:1px solid #00cc34;
+    border: 1px solid #00cc34;
 }
 
 .button {
@@ -174,9 +175,17 @@ footer {
 
 @media screen and (max-width: 800px) {
 
-	.topbar {
+    .topbar {
+        align-self: center;
+        margin-left: 0px;
+        width: 100%;
+        justify-content: center;
+    }
 
-	}
+    .hero {
+        height: 220px;
+    }
+
     .hero h1 {
         font-size: 25px;
     }
@@ -184,6 +193,7 @@ footer {
     .text {
         margin: unset;
         max-width: 95%;
+        margin-top: -60px;
     }
 
     .oddsbox {
@@ -194,7 +204,7 @@ footer {
         flex: 1 0 100%;
     }
 
-    .button {
+    a {
         order: -1;
         flex: 1 0 40%;
         max-width: 120px;
@@ -208,5 +218,9 @@ footer {
         flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: unset;
+    }
+
+    article {
+        margin: 10px 30px 60px;
     }
 }
